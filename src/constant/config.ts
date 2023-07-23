@@ -1,7 +1,6 @@
 export const siteConfig = {
-  title: 'Next.js + Tailwind CSS + TypeScript Starter',
+  title: 'Robert Siński - Terminal Portfolio',
   description:
-    'A starter for Next.js, Tailwind CSS, and TypeScript with Absolute Import, Seo, Link component, pre-configured with Husky',
-  /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
-  url: 'https://tsnext-tw.thcl.dev',
+    'Robert Siński - Terminal Portfolio. A simple portfolio website made with Next.js and Tailwind CSS.',
+  url: 'terminal-portfolio-lemon.vercel.app',
 };

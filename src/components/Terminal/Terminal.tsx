@@ -14,10 +14,17 @@ const Terminal: React.FC = (): JSX.Element => {
         welcomeMessage={welcomeMessage}
         themes={{
           'linux-terminal-theme': {
-            themeBGColor: '#272B36',
-            themeToolbarColor: '#DBDBDB',
-            themeColor: '#FFFEFC',
-            themePromptColor: '#d38268',
+            themeBGColor: '#000000',
+            themeColor: '#00FF00',
+            accentColor: '#00FF00',
+            promptSymbolColor: '#00FF00',
+            commandColor: '#00FF00',
+            outputColor: '#00FF00',
+            errorOutputColor: '#FF0000',
+            fontSize: '1rem',
+            spacing: '1%',
+            fontFamily: 'monospace',
+            width: '100%',
           },
         }}
         theme='linux-terminal-theme'

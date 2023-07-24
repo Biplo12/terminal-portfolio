@@ -1,7 +1,7 @@
 import React from 'react';
 const TerminalHelp: React.FC = (): JSX.Element => {
   return (
-    <div className='mt-2 flex flex-col gap-2'>
+    <div className='mt-3 flex flex-col gap-2'>
       <p>Available commands:</p>
       <ul className='list-inside list-disc'>
         <li>help - show this message</li>

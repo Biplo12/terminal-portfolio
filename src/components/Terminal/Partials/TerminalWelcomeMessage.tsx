@@ -20,7 +20,7 @@ const TerminalWelcomeMessage: React.FC = (): JSX.Element => {
       </p>
       <p>
         To get started, type:
-        <span className='text-green-500'> help</span>
+        <span className='text-blue-500'> help</span>
       </p>
     </div>
   );

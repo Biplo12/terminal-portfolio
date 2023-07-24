@@ -2,9 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.index_controls__sXDjs {
+  display: none !important;
+}
+
 .index_editor__JoDSg {
   height: 100% !important;
   border-radius: 0px !important;
+  min-height: 100vh !important;
 }
 .index_editor__JoDSg::-webkit-scrollbar {
   width: 0px !important;

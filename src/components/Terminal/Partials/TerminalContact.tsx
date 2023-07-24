@@ -6,6 +6,9 @@ const TerminalContact: React.FC = (): JSX.Element => {
         If you want to contact me, you can send me an email at{' '}
         <a href='mailto:robert.sinski@outlook.com'>robert.sinski@outlook.com</a>
       </h1>
+      <h2>
+        Or you can phone me at <a href='tel:+48794263449'>+48 794 263 449</a>
+      </h2>
       <p>Or you can find me on: </p>
       <ul className='list-inside list-disc'>
         <li>

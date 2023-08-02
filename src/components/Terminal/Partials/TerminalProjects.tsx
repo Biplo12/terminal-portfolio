@@ -1,5 +1,12 @@
 import React from 'react';
-const TerminalProjects: React.FC = (): JSX.Element => {
+
+interface ITerminalProjectsProps {
+  subColor: string;
+}
+
+const TerminalProjects: React.FC<ITerminalProjectsProps> = ({
+  subColor,
+}): JSX.Element => {
   const projects = [
     {
       name: 'A* Path Finder',
@@ -32,7 +39,14 @@ const TerminalProjects: React.FC = (): JSX.Element => {
       </h1>
       {projects.map((project, index) => (
         <div key={index} className='flex flex-col gap-2'>
-          <h1 className='text-xl font-bold'>{project.name}</h1>
+          <h1
+            className='text-xl font-bold'
+            style={{
+              color: subColor,
+            }}
+          >
+            {project.name}
+          </h1>
           <p className='text-[1rem]'>{project.description}</p>
           <div className='flex flex-col gap-2'>
             <ul className='list-inside list-disc'>
@@ -41,7 +55,10 @@ const TerminalProjects: React.FC = (): JSX.Element => {
                   href={project.domain}
                   target='_blank'
                   rel='noreferrer'
-                  className='text-blue-500 hover:underline'
+                  className='hover:underline'
+                  style={{
+                    color: subColor,
+                  }}
                 >
                   Domain
                 </a>
@@ -51,7 +68,10 @@ const TerminalProjects: React.FC = (): JSX.Element => {
                   href={project.github}
                   target='_blank'
                   rel='noreferrer'
-                  className='text-blue-500 hover:underline'
+                  className='hover:underline'
+                  style={{
+                    color: subColor,
+                  }}
                 >
                   GitHub
                 </a>
@@ -66,7 +86,10 @@ const TerminalProjects: React.FC = (): JSX.Element => {
           href='https://github.com/Biplo12?tab=repositories'
           target='_blank'
           rel='noreferrer'
-          className='text-blue-500 hover:underline'
+          className='hover:underline'
+          style={{
+            color: subColor,
+          }}
         >
           GitHub
         </a>

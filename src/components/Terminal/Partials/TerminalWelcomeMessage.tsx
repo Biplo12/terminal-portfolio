@@ -1,5 +1,12 @@
 import React from 'react';
-const TerminalWelcomeMessage: React.FC = (): JSX.Element => {
+
+interface ITerminalWelcomeMessageProps {
+  subColor: string;
+}
+
+const TerminalWelcomeMessage: React.FC<ITerminalWelcomeMessageProps> = ({
+  subColor,
+}): JSX.Element => {
   return (
     <div className='mb-4 flex flex-col gap-2'>
       <h1 className='text-2xl font-bold'>Welcome to my terminal portfolio!</h1>
@@ -10,7 +17,8 @@ const TerminalWelcomeMessage: React.FC = (): JSX.Element => {
         For more information about me, please visit my{' '}
         <a
           href='https://www.github.com/biplo12'
-          className='text-blue-500 hover:underline'
+          className='hover:underline'
+          style={{ color: subColor }}
           rel='noreferrer'
           target='_blank'
         >
@@ -20,7 +28,7 @@ const TerminalWelcomeMessage: React.FC = (): JSX.Element => {
       </p>
       <p>
         To get started, type:
-        <span className='text-blue-500'> help</span>
+        <span style={{ color: subColor }}> help</span>
       </p>
     </div>
   );

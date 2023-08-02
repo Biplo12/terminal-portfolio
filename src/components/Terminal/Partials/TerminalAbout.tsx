@@ -1,8 +1,22 @@
 import React from 'react';
-const TerminalAbout: React.FC = (): JSX.Element => {
+
+interface ITerminalAboutProps {
+  subColor: string;
+}
+
+const TerminalAbout: React.FC<ITerminalAboutProps> = ({
+  subColor,
+}): JSX.Element => {
   return (
     <div className='mt-2 flex flex-col gap-2'>
-      <h1 className='text-lg font-bold'>I'm a junior full-stack engineer.</h1>
+      <h1
+        className='text-lg font-bold'
+        style={{
+          color: subColor,
+        }}
+      >
+        I'm a junior full-stack engineer.
+      </h1>
       <ul className='list-inside list-disc'>
         <li>
           A passionate Self-taught full-stack developer. With a strong interest
